@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "name": "Attach to Chrome",
+      "port": 9222,
+      "request": "attach",
+      "type": "chrome",
+      "webRoot": "${workspaceFolder}/frontend",
+      "skipFiles": ["${workspaceFolder}/<node_internals>/**", "${workspaceFolder}/node_modules/**"]
+    },
+    {
+      "name": "Attach to Node",
+      "port": 9229,
+      "request": "attach",
+      "type": "node",
+      "restart": true,
+      "outFiles": ["!**/node_modules/**"]
+    }
+  ]
+}
